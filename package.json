@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "name": "lateres_modern_homepage",
+  "version": "1.0.0",
+  "description": "Lateres Webpage",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "Roope Myller",
+  "license": "ISC"
+}
