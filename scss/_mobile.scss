@@ -1,41 +1,94 @@
 // Widescreen 
 @include mediaXL{
+    main{
+        margin-top: 1vh;
+        padding: 0rem 6rem;
+        align-items: center; 
+        .lg-heading{
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        &#home{
+            padding: 0rem 6rem;
+            
+        }
+    }
     .events{
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .bunumap-img{
+        width: 40%;
     }
 
 }
 
 // Desktops & Laptops
 @include mediaLg{
+    main{
+        margin-top: 1vh;
+        padding: 0rem 4rem;
+        align-items: center; 
+        .lg-heading{
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        &#home{
+            padding: 0rem 4rem;
+            
+        }
+    }
+    
     .events{
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .bunumap-img{
+        width: 60%;
+    }
+    
 }
 
 // Tablets & small laptops
 @include mediaMd{
     main{
-        align-items: center;
-        text-align: center;    
+        margin-top: 1vh;
+        padding: 0rem 2rem;
+        align-items: center;  
         .lg-heading{
             line-height: 1;
             margin-bottom: 1rem;
+        }
+
+        &#home{
+            padding: 0rem 2rem;
+            
         }
     }
 
     .events{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .bunumap-img{
+        width: 80%;
+    }
 }
 
 // Smartphones
 @include mediaSm{
     main#home h1{
-        margin-top: 10vh;
+        text-align: center;
+        margin-top: 1vh;
+        padding: 0rem 2rem;
     }
     
     .events{
         grid-template-columns: 1fr;
+    }
+    .bunumap-img{
+        width: 100%;
     }
 }

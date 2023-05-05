@@ -119,8 +119,8 @@ h1, h2, h3 {
     text-transform: uppercase; }
 
 main {
-  padding: 0rem 2rem;
-  min-height: calc(65vh - 65px);
+  padding: 0rem 8rem;
+  min-height: calc(65vh - 75px);
   font-size: 15px; }
   main .icons {
     margin-top: 1rem; }
@@ -129,8 +129,10 @@ main {
       main .icons a:hover {
         color: #ea5f5f;
         transition: all 0.5s ease-out; }
-  main#home, main#events {
-    overflow: hidden; }
+  main#home {
+    overflow: hidden;
+    width: 100%;
+    padding: 0rem 14rem; }
 
 .events {
   display: grid;
@@ -143,6 +145,9 @@ main {
       opacity: 0.5;
       border-color: #ea5f5f;
       transition: all 0.5s ease-out; }
+
+.bunumap-img {
+  width: 100%; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -173,25 +178,56 @@ main {
   color: #dedede; }
 
 @media screen and (min-width: 1171px) {
-  .events {
-    grid-template-columns: repeat(4, 1fr); } }
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  .events {
-    grid-template-columns: repeat(3, 1fr); } }
-
-@media screen and (max-width: 768px) {
   main {
-    align-items: center;
-    text-align: center; }
+    margin-top: 1vh;
+    padding: 0rem 6rem;
+    align-items: center; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+    main#home {
+      padding: 0rem 6rem; }
   .events {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .bunumap-img {
+    width: 40%; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  main {
+    margin-top: 1vh;
+    padding: 0rem 4rem;
+    align-items: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+    main#home {
+      padding: 0rem 4rem; }
+  .events {
+    grid-template-columns: repeat(3, 1fr); }
+  .bunumap-img {
+    width: 60%; } }
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 1vh;
+    padding: 0rem 2rem;
+    align-items: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+    main#home {
+      padding: 0rem 2rem; }
+  .events {
+    grid-template-columns: repeat(2, 1fr); }
+  .bunumap-img {
+    width: 80%; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; }
+    text-align: center;
+    margin-top: 1vh;
+    padding: 0rem 2rem; }
   .events {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .bunumap-img {
+    width: 100%; } }

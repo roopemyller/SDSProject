@@ -52,8 +52,8 @@ h1, h2, h3{
 }
 
 main{
-    padding: 0rem 2rem;
-    min-height: calc(65vh - 65px);
+    padding: 0rem 8rem;
+    min-height: calc(65vh - 75px);
     font-size: 15px;
 
     .icons{
@@ -69,8 +69,10 @@ main{
         }
     }
 
-    &#home, &#events{
+    &#home{
         overflow: hidden;
+        width: 100%;
+        padding: 0rem 14rem;
     }
 }
 
@@ -90,6 +92,10 @@ main{
             @include easeOut;
         }
     }
+}
+
+.bunumap-img{
+    width: 100%;
 }
 
 .btn {
