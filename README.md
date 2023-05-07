@@ -1,6 +1,6 @@
-This is my Software Development Skills couse project
+This is my Software Development Skills course project
 
-Here you can find my couse project
+Here you can find my course project
 
 This website is inspired by the Lappeenrannan teekkarireserviläiset website.
 I have been updating (and I am also a board member) the Lateres web page and I thought that I could do it from the ground up as a project for this course.
