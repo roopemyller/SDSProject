@@ -1,13 +1,16 @@
 {
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "node-sass": "^8.0.0"
   },
   "name": "lateres_modern_homepage",
   "version": "1.0.0",
   "description": "Lateres Webpage",
   "main": "index.js",
+  "homepage": "https://roopemyller.github.io/SDSProject",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive"
+    "sass": "node-sass -w scss/ -o dist/css --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Roope Myller",
   "license": "ISC"
