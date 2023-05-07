@@ -2,6 +2,14 @@
 @import 'menu';
 
 
+// top + banner photo
+
+.top{
+    height: 5vh;
+    width: 100%;
+    background: darken($primary-color, 10);
+}
+
 .banner{
     position: relative;
     left: 0;
@@ -12,18 +20,18 @@
         width: 100%;
         height: 30vh;
         object-fit: cover;
-        z-index: 2;
+        z-index: 0;
     }
 
     .logo{
         position: absolute;
         display: block;
         margin: auto;
-        top: calc(50% - 75px);
-        left: calc(50% - 75px);
-        width: 150px;
-        height: 150px;
-        z-index: 3;
+        top: calc(50% - 100px);
+        left: calc(50% - 100px);
+        width: 200px;
+        height: 200px;
+        z-index: 1;
     }
 }
 
@@ -43,25 +51,20 @@ body{
 
 h1, h2, h3{
     margin: 0;
-    font-weight: 500;
+    font-weight: 600;
 
     &.lg-heading{
-        font-size: 2rem;
+        font-size: 2.3rem;
         text-transform: uppercase;
     }
 }
 
 main{
-    padding: 0rem 8rem;
-    min-height: calc(65vh - 75px);
+    min-height: calc(65vh - 65px);
     font-size: 15px;
 
     .icons{
-        margin-top: 1rem;
-
         a{
-            padding: 0.3rem;
-
             &:hover{
                 color: $secondary-color;
                 @include easeOut();
@@ -72,14 +75,26 @@ main{
     &#home{
         overflow: hidden;
         width: 100%;
-        padding: 0rem 14rem;
     }
 }
 
+// index.html
+
+.calendar{
+    margin-top: 5px;
+    width: 100%;
+    height: 23vh;
+    border: solid 4px $secondary-color;
+}
+
+
+// events.html
+
 .events{
+    padding: 1rem 0rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
 
 
     img{
@@ -94,9 +109,6 @@ main{
     }
 }
 
-.bunumap-img{
-    width: 100%;
-}
 
 .btn {
     display: block;
@@ -109,23 +121,52 @@ main{
     }
 }
 
-.btn-dark{
-    @extend .btn;
-    background: darken($primary-color, 50);
-    color: #fff;
-}
-
 .btn-light{
     @extend .btn;
     background: lighten($primary-color, 50);
     color: #333;
 }
 
-.top{
-    height: 5vh;
-    width: 100%;
-    background: darken($primary-color, 10);
+// contact.html
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1.5rem;
+
+    div{
+        font-size: 2rem;
+        border: 3px #fff solid;
+        padding: 1rem 1.5rem;
+        margin-bottom: 2rem;
+        @include easeOut;
+
+        span{
+            color: $secondary-color;
+        }
+
+
+
+        &:hover{
+            padding: 0.3rem 0.5rem;
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+            
+            .text-secondary {
+                color: set-text-color($secondary-color);
+            }
+            a{
+                color: set-text-color($secondary-color);
+                @include easeOut;
+            }
+        }
+    }
+
 }
+
+// footer
 
 .main-footer{
     text-align: center;
