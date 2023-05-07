@@ -233,6 +233,7 @@ main {
     margin-top: 1vh;
     align-items: center; }
     main .lg-heading {
+      font-size: 1.8rem;
       text-align: center;
       line-height: 1;
       margin-bottom: 1rem; }
@@ -265,6 +266,7 @@ main {
       margin-top: 1vh;
       padding: 1rem 2rem; }
     main .lg-heading {
+      font-size: 1.5rem;
       text-align: center; }
   .events {
     grid-template-columns: 1fr; } }
