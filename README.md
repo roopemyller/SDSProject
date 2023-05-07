@@ -11,3 +11,7 @@ https://github.com/lateres/Lateres-web-source and the url here: https://lateres.
 Mainly the text parts are all the same in both but the "Tapahtumat" and "Yhteystiedot" section in my 'mock' website are only in my version and can't be found from the official website(atleast not yet maybe in the future).
 
 I have also left some things out of the original website.
+
+The deployed website can be accessed here: 
+https://roopemyller.github.io/SDSProject 
+
