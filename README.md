@@ -1,4 +1,4 @@
-This is my Software Development Skills course project
+This is my Software Development Skills Frontend course project
 
 Here you can find my course project
 
